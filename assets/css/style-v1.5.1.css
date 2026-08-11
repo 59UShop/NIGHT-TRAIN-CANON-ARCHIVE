@@ -154,3 +154,5 @@ main{margin-left:var(--sidebar);padding:28px 32px 72px;max-width:1700px}.page{di
 
 /* ===== v1.5 PROP STATUS ===== */
 .lore-badge{font-weight:800;letter-spacing:.06em}.lore-canon{border-color:#36516c;color:#a9c9e9;background:#0c1927}.lore-lore{border-color:#625833;color:#e1cb82;background:#211d0e}.lore-concept{border-color:#51406c;color:#c5afe8;background:#191323}.lore-folklore{border-color:#465b47;color:#acd0ad;background:#112016}.prop-source-section{margin-bottom:8px}.prop-story-hooks{grid-column:1/-1}.prop-story-hooks ul{columns:2;column-gap:26px}@media(max-width:760px){.prop-story-hooks ul{columns:1}}
+
+/* v1.5.1 deployment hotfix: versioned asset for GitHub Pages/browser cache busting. */

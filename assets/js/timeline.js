@@ -7,9 +7,13 @@
    const host=document.getElementById(containerId), detail=document.getElementById(detailId); if(!host)return;
    const years=history.map(x=>x.year); const min=Math.min(...years)-5,max=Math.max(...years)+5; const pad=5;
    const pos=y=>pad+(y-min)/(max-min)*(100-pad*2);
+   const positions=history.map(e=>pos(e.year));
+   const laneGap=10; const laneLast=[]; const lanes=[];
+   positions.forEach((x,i)=>{let lane=0; while(laneLast[lane]!=null && x-laneLast[lane] < laneGap) lane++; laneLast[lane]=x; lanes[i]=lane;});
+   const maxLane=Math.max(0,...lanes); host.style.height=(250 + maxLane*30)+'px';
    const rangeStart=616, rangeEnd=700;
    host.innerHTML=`<div class="timeline-axis"></div><div class="timeline-range" style="left:${pos(rangeStart)}%;width:${pos(rangeEnd)-pos(rangeStart)}%"></div><div class="timeline-range-label" style="left:${(pos(rangeStart)+pos(rangeEnd))/2}%">《月の心臓》移設時期：詳細未確定</div>`+
-   history.map((e,i)=>`<button class="timeline-dot" data-i="${i}" aria-label="${esc(e.label)}" style="left:${pos(e.year)}%"></button><div class="timeline-year" style="left:${pos(e.year)}%"><b>${esc(e.label)}</b><small>${esc(e.relative)}</small></div>`).join('');
+   history.map((e,i)=>`<button class="timeline-dot" data-i="${i}" aria-label="${esc(e.label)}" style="left:${positions[i]}%"></button><div class="timeline-year lane-${lanes[i]}" style="left:${positions[i]}%"><b>${esc(e.label)}</b><small>${esc(e.relative)}</small></div>`).join('');
    const tooltip=document.getElementById('timelineTooltip');
    host.querySelectorAll('.timeline-dot').forEach(dot=>{
      const i=Number(dot.dataset.i),e=history[i];
