@@ -1,7 +1,7 @@
 {
   "meta": {
     "project": "夜汽車",
-    "version": "2.2",
+    "version": "2.8",
     "generated": "2026-08-11",
     "status": "Nola校正版反映済み",
     "labels": [
@@ -151,7 +151,13 @@
         "表店・宿泊棟の副店主"
       ],
       "residence": "店主居住区",
-      "age": null
+      "age": null,
+      "chapter12": {
+        "location": "忘却線・誰そ彼／アルカ保管領域",
+        "internal_time_years": 17,
+        "state": "現実側帰属が薄れ、保管領域を内側から支える",
+        "return_condition": "異常固定の停止＋現実側帰属の再強化"
+      }
     },
     "ミア・アステラ": {
       "status": "確定",
@@ -182,7 +188,8 @@
       "family": [
         "マレーナ"
       ],
-      "deprecated_note": "初期ログの12歳の弟は旧設定／不採用"
+      "deprecated_note": "初期ログの12歳の弟は旧設定／不採用",
+      "formal_attendant_day4": true
     },
     "マレーナ": {
       "status": "確定",
@@ -192,7 +199,12 @@
       "base_647": "ベルネ側の別《夜汽車》地上拠点",
       "silver_tree_inn": "宿兼食堂経営＋正式店主",
       "after_accident": "捜索継続→3か月後アルベルト面会要求→約半年後銀樹亭閉業・所在不明",
-      "eleanor_ch11": "アルベルトの企図からエマとルチアを逃がした"
+      "eleanor_ch11": "アルベルトの企図からエマとルチアを逃がした",
+      "chapter13": {
+        "77y_intervention": "4両を夜汽車側へ救出しようとして接続競合・時間分裂",
+        "six_months_later": "残存4両を救うため涯月駅へ入り保存時間の錨になる",
+        "strongest_current_belonging": "エマ"
+      }
     },
     "ノア": {
       "status": "確定",
@@ -217,7 +229,8 @@
         "family": "未確定",
         "noble_rank": "未確定",
         "reason_for_runaway": "家にいたくなかった、以上は未確定"
-      }
+      },
+      "formal_attendant_day4": true
     },
     "リゼット・アルシェ": {
       "status": "確定",
@@ -379,7 +392,9 @@
     "フィア": {
       "status": "確定",
       "age_at_death": 12,
-      "role": "アルベルトの娘"
+      "role": "アルベルトの娘",
+      "relation": "アルベルトの娘",
+      "chapter15_first_name_reveal": true
     },
     "ミア": {
       "eleanor_recognition": {
@@ -387,7 +402,29 @@
         "chapter8": "セイルと一緒にいた女性をエレノアとは特定できない",
         "later_recollection": "現在から約3年前にエレノアがミアを起こし、アルカ保管領域へ同行した記憶が後で判明"
       },
-      "chapter9_time_stop_understanding": "アルカ側固定が残るが、23年間19歳の全原因とは断定しない"
+      "chapter9_time_stop_understanding": "アルカ側固定が残るが、23年間19歳の全原因とは断定しない",
+      "chapter12": {
+        "anchor_truth_revealed": true,
+        "personal_time_stopped": true,
+        "human": true,
+        "return_places": [
+          "家族／アルカへの帰属",
+          "夜汽車への新しい帰属"
+        ]
+      },
+      "chapter13": {
+        "formal_attendant": true,
+        "yuan": {
+          "age": 35,
+          "location": "ヴァルド公国",
+          "job": "魔導技師",
+          "married": true,
+          "children": 2,
+          "contacted": false
+        },
+        "sera_leon_day4": "23年前以後の通常生活記録なし／帰還候補",
+        "future_promise": "20歳になったら夜汽車で初めての酒を一杯"
+      }
     },
     "アルベルト": {
       "chapter9": {
@@ -406,6 +443,30 @@
         "shared_memory": true,
         "same_single_individual": "未確定",
         "mechanism": "未解禁"
+      },
+      "chapter12": {
+        "time_copies": true,
+        "mechanism": "自身の異なる時間を切り出し別個体として固定",
+        "shared_memory": true,
+        "current_goal": "複数の自分を一つへ統合しようとしている可能性",
+        "daughter_motive_revealed_in_novel": false
+      },
+      "chapter14": {
+        "simultaneous_instances": 6,
+        "five_transferred_to_lost_property": true,
+        "lost_property_sealed_by_sail": true,
+        "remaining_instance": "若く見える一個体",
+        "remaining_instance_had_preaggregated_time_memory": true,
+        "daughter_revealed": false,
+        "fia_name_revealed": false,
+        "watch_contents_revealed": false
+      },
+      "chapter15": {
+        "initial_motive": "フィア死亡翌日、娘が生きていた昨日へ戻るため時間研究を開始",
+        "chose_return": true,
+        "destination": "フィアが生きていた時間",
+        "ticket": "帰郷・フィア",
+        "forgiven_by_mia": false
       }
     },
     "ルチア": {
@@ -413,6 +474,15 @@
       "death": "109年前に一度死亡",
       "77_years_ago": "エレノア証言では再び生きていた",
       "silver_ticket_punch": "マレーナから受領しDAY3も所持"
+    },
+    "リゼ": {
+      "formal_attendant_day4": true
+    },
+    "セラ": {
+      "day4_status": "23年前以後の通常生活記録なし／アルカ中枢の帰還候補"
+    },
+    "レオン": {
+      "day4_status": "23年前以後の通常生活記録なし／アルカ中枢の帰還候補"
     }
   },
   "items_food": {
@@ -658,6 +728,39 @@
       "passenger": "リーナ",
       "companion": "ミア",
       "result": "忘却線の白い列車が到着"
+    },
+    "錨": {
+      "target": "ミア・アステラ",
+      "placed_by": "アルベルト・クロウリー",
+      "when": "王国暦701年／23年前",
+      "effect": "ミアの個人時間を701年のアルカ側時間座標へ固定し、アルカとの接続を残す",
+      "consequence": "23年間19歳の主要因",
+      "removal_principle": "現在側の帰属を先に安定させてから切る"
+    },
+    "異常固定命令": {
+      "solution": "月の心臓本体は破壊せず、ルチアが銀の切符鋏で異常固定命令を切断する方針"
+    },
+    "給仕人_ch13": {
+      "members": [
+        "ミア",
+        "エマ",
+        "リゼ",
+        "ノア"
+      ],
+      "meaning": "夜汽車への正式帰属＋内部勤務資格",
+      "day4_support": "各1人分の帰還用帰属保持を補助する暫定運用"
+    },
+    "店主庫": {
+      "location": "厨房・珈琲豆保管棚奥",
+      "purpose": "客／駅／夜汽車側から重要物を見つかりにくくする小型保管空間",
+      "day4_storage": "銀の切符鋏"
+    },
+    "帰郷・フィア": {
+      "traveler": "アルベルト・クロウリー",
+      "destination": "フィアが生きていた時間",
+      "voluntary_choice_required": true,
+      "identity_continuity_guaranteed": false,
+      "return_to_present_guaranteed": false
     }
   },
   "author_corrections": [
@@ -776,6 +879,165 @@
       "passenger_service": true,
       "cargo_service": true,
       "toshokane": "ルーナベルから通常旅客便で二駅先（途中駅名未定）"
+    }
+  },
+  "routes": {
+    "忘却線_ch12": {
+      "status": "閉鎖路線・第十二章のみエレノア切符で限定接続",
+      "effect": "長期滞在で名前・目的・帰る場所・現実側帰属が曖昧になる",
+      "stops_confirmed": [
+        "遺景",
+        "名残",
+        "誰そ彼"
+      ],
+      "terminal_name": "未開示",
+      "safety": [
+        "同行者と手を離さない",
+        "名前を相互確認",
+        "帰る場所を相互確認"
+      ]
+    }
+  },
+  "novel_information_order": {
+    "chapter12": {
+      "reveal": [
+        "忘却線作用",
+        "エレノア17年",
+        "アルカ中枢保管領域",
+        "ミアの錨",
+        "アルベルト時間複製",
+        "異常固定命令の切断方針"
+      ],
+      "withhold": [
+        "アルベルトの娘の存在",
+        "フィアという名前",
+        "研究開始時の最初の動機",
+        "忘却線終点名"
+      ]
+    },
+    "chapter16": {
+      "withhold_to_part2": [
+        "名前を知らない少女",
+        "涯月駅より先の具体路線導入",
+        "星海線の具体的導入",
+        "未来のリーナとの関係"
+      ]
+    },
+    "epilogue": {
+      "do_not_start": [
+        "名前を知らない少女",
+        "星海線の本格導入",
+        "第二部事件"
+      ]
+    }
+  },
+  "chapter13": {
+    "provisional_return_candidates": [
+      "エレノア",
+      "マレーナ",
+      "セラ",
+      "レオン",
+      "オスカー",
+      "ハロルド",
+      "リナ"
+    ],
+    "albert_capture": {
+      "noah": "最初の個体を拘束",
+      "mia": "共有航路を発見",
+      "rize": "共有路を術式固定",
+      "rina": "共有する全個体を涯月駅・忘れ物保管室へ行先指定",
+      "order": "アルベルト封じ→帰還処理→固定命令切断"
+    },
+    "departure": {
+      "original": "22:00",
+      "moved_to": "20:00",
+      "reason": "統合開始・保管領域縮小・エレノア通信途絶"
+    }
+  },
+  "locations": {
+    "中央保管領域": {
+      "entrance": "巨大な白い扉。表面を失われた人名・地名等が流れる",
+      "nature": "異なる場所・時間が多層に重なる",
+      "navigation": "通常方向感覚が不安定。ミアの航路適性が有効",
+      "day4": "アルベルト統合の影響で不安定化。エレノアが最深部から内側を支える"
+    }
+  },
+  "chapter14": {
+    "capture_plan": {
+      "noah": "一個体の両腕拘束",
+      "mia": "個体間共有航路探知",
+      "rize": "共有路固定",
+      "rina": "繋がっている全個体の行先を忘れ物保管室へ指定",
+      "lucia": "銀の切符鋏を温存",
+      "sail": "保管領域維持＋忘れ物保管室封鎖",
+      "julius": "時間異常警戒"
+    },
+    "end_state": "5個体封鎖後、残存1個体へ時間・記憶が統合集約。《月の心臓》が直下へ現れる。"
+  },
+  "chapter15": {
+    "anchor_interference": {
+      "action": "アルベルトがミアの錨を自身の統合へ引く強制接続を作る",
+      "lucia_cut": "ミア→アルベルトの接続のみ",
+      "mia_anchor_itself_cut": false,
+      "fixed_command_cut": false
+    },
+    "end_state": "アルベルト帰還後、中央保管領域崩壊加速。残り猶予は長くて約30分。"
+  },
+  "chapter16": {
+    "returnees": [
+      "マレーナ",
+      "セラ",
+      "レオン",
+      "オスカー・ベルン",
+      "リナ・セヴェル",
+      "イルマ・セーデル＋胎児",
+      "フィン・アルノー",
+      "マーサ・リード"
+    ],
+    "harold": {
+      "general_return": false,
+      "new_belonging": "夜汽車",
+      "role": "臨時乗務員",
+      "probation": "3か月",
+      "badge": "銀色の小さな車輪章"
+    },
+    "eleanor": {
+      "formal_shopkeeper_after_return": false,
+      "night_train_attendant_for_rebelonging": true,
+      "post_part1_role": "副店主",
+      "return_food": "リーナのハムチーズサンド"
+    },
+    "mia": {
+      "stored_time_integrated": true,
+      "anchor_cut": true,
+      "personal_time_resumed": true,
+      "parents_returned": true
+    },
+    "moon_heart": {
+      "destroyed": false,
+      "abnormal_fixed_command_cut": true,
+      "state_after": "休眠状態に近い"
+    }
+  },
+  "epilogue": {
+    "title": "おかえりなさい",
+    "night": {
+      "lodging_reconnected": true,
+      "lodging_rooms": 16,
+      "celebration": "月蜜柑とはちみつのバターケーキ＋追加料理",
+      "eleanor_role": "副店主",
+      "formal_shopkeeper": "リーナ"
+    },
+    "day5": {
+      "fin_reunited_with_parents": true,
+      "ilma_medical_check": "母子ともに直近異常なし・経過観察",
+      "martha_grandchild_meeting": "調整開始",
+      "yuan_direct_reunion": false,
+      "yuan_contact_preparation": true
+    },
+    "final_scene": {
+      "mia": "ただいま",
+      "rina": "おかえりなさい"
     }
   }
 }
