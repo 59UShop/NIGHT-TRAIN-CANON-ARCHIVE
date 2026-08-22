@@ -79,7 +79,7 @@ window.NT_CHARACTER_CONFIG={
     "portrait": "assets/images/characters/martha.png",
     "objectPosition": "50% 22%"
   },
-  "イルマ・セーデル": {
+  "イルマ・ソーデル": {
     "id": "irma",
     "portrait": "assets/images/characters/irma.png",
     "objectPosition": "50% 22%"
@@ -142,6 +142,26 @@ window.NT_CHARACTER_CONFIG={
   "フィア": {
     "id": "fia",
     "portrait": "assets/images/characters/fia.png",
+    "objectPosition": "50% 22%"
+  },
+  "クララ": {
+    "id": "clara",
+    "portrait": "assets/images/characters/clara.png",
+    "objectPosition": "50% 22%"
+  },
+  "エリオット": {
+    "id": "elliott",
+    "portrait": "assets/images/characters/elliott.png",
+    "objectPosition": "50% 22%"
+  },
+  "レナード・ヴァルグレン": {
+    "id": "leonard-varglen",
+    "portrait": "assets/images/characters/leonard-varglen.png",
+    "objectPosition": "50% 22%"
+  },
+  "ガレス・ハイデル": {
+    "id": "gares-heidel",
+    "portrait": "assets/images/characters/gares-heidel.png",
     "objectPosition": "50% 22%"
   }
 };

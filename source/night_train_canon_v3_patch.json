@@ -1,0 +1,138 @@
+{
+  "version": "3.0",
+  "created": "2026-08-12",
+  "priority": [
+    "completed_part1_and_epilogue",
+    "v3_author_locked",
+    "canon_v2_8",
+    "archive_v1_5_non_conflicting",
+    "legacy_daily_event_pool"
+  ],
+  "daily_rebuild": {
+    "start": "morning_after_completed_epilogue",
+    "calendar_basis": "724 AutumnMonth 8 morning equivalent",
+    "legacy_day_numbers": "deprecated",
+    "part2_hooks_in_daily": false,
+    "opening_events": [
+      "toki_first_meeting",
+      "ordinary_morning",
+      "reopen_prep_and_cake_first_sale",
+      "master_residence_discovery",
+      "noah_chooses_cafe_2f",
+      "gares_arrival",
+      "mia_contacts_yuan"
+    ]
+  },
+  "characters": {
+    "rina": {
+      "age": 24,
+      "pre_story_job": "small_diner_front_and_kitchen_assistant",
+      "parents_alive": true,
+      "romance_with_noah_at_start": "none_companions"
+    },
+    "clara": {
+      "role": "rina_mother_eleanor_daughter",
+      "alive": true,
+      "traits": [
+        "practical",
+        "common_sense",
+        "caring"
+      ]
+    },
+    "elliott": {
+      "role": "rina_father",
+      "alive": true,
+      "job": "teacher",
+      "traits": [
+        "calm",
+        "good_listener"
+      ]
+    },
+    "noah_varglen": {
+      "age": 27,
+      "origin": "Vard Duchy",
+      "job": "Kingdom Knights regular knight",
+      "brother": "Leonard Varglen",
+      "left_home_at": 12
+    },
+    "leonard_varglen": {
+      "age": 34,
+      "older_than_noah": 7,
+      "role": "heir_incoming_house_head"
+    },
+    "gares_heidel": {
+      "age_approx": 58,
+      "species": "human",
+      "role": "Kingdom Knight Commander",
+      "relations": [
+        "Eleanor longtime suitor/friend",
+        "Noah mentor/father-figure"
+      ]
+    },
+    "mia": {
+      "guild_registered": true,
+      "yuan_direct_reunion": false
+    },
+    "emma": {
+      "guild_registered": false,
+      "main_work": [
+        "kitchen",
+        "baking",
+        "pantry"
+      ]
+    },
+    "toki": {
+      "first_meeting": "daily_rebuild_opening",
+      "cry": "みゃあ",
+      "appearance": "white cat; deep-night-sky ear tips and tail; gold eyes"
+    }
+  },
+  "eleanor_time": {
+    "outside": "about 3 months",
+    "forgetting_line": "about 17 years",
+    "legacy_outside_3_days": "deprecated"
+  },
+  "knights": {
+    "name": "王国騎士団",
+    "levels": [
+      "王都総本部",
+      "地方本部",
+      "各地の詰所"
+    ],
+    "noah_rank": "中堅正騎士"
+  },
+  "night_train_operations": {
+    "cafe_hours": "08:00-21:00",
+    "weekly_closed_days": 1,
+    "lodging_rooms": 16,
+    "night_arrivals_continue_after_cafe_close": true
+  },
+  "romance_route": {
+    "final_pair": "Rina x Noah",
+    "start": "companions_no_romantic_awareness",
+    "pace": "very_slow",
+    "drunk_kiss": "attempt_only_no_lip_contact",
+    "first_lip_kiss": "after_rina_conscious_choice"
+  },
+  "products": {
+    "replay_development": [
+      "夜汽車の窓",
+      "気まぐれ旅支度セット",
+      "トキのほしねこクッキー",
+      "今日の旅切符",
+      "通常紙箱",
+      "特別缶"
+    ],
+    "cake": "created Part1 Day4; first commercial serving early rebuilt daily",
+    "kamitsukido": "Allen family shop"
+  },
+  "unresolved": [
+    "Eleanor biological/chronological age mechanism",
+    "Clara occupation",
+    "parents current city",
+    "Varglen title and parents names",
+    "specific accident in Noah runaway trigger",
+    "Gares/Eleanor final relationship",
+    "Allen/Emma final romance"
+  ]
+}

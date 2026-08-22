@@ -1,9 +1,9 @@
 {
   "meta": {
     "project": "夜汽車",
-    "version": "2.8",
-    "generated": "2026-08-11",
-    "status": "Nola校正版反映済み",
+    "version": "3.1",
+    "generated": "2026-08-22",
+    "status": "完成第一部＋v3.1日常恋愛編進行パッチ適用",
     "labels": [
       "確定",
       "暫定",
@@ -23,11 +23,11 @@
       }
     ],
     "precedence": [
-      "後からのユーザー明示修正",
-      "後期の統合設定資料",
-      "後期に反復された描写",
-      "初期の単発描写",
-      "アシスタント提案・推測"
+      "正史資料v3.1のユーザー明示採用・訂正",
+      "完成小説第一部＋完成エピローグ（本文そのもの）",
+      "正史資料v3.0の非衝突事項",
+      "正史資料v2.8以前の非衝突事項",
+      "旧日常編DAY1〜55＝イベント素材プールのみ"
     ],
     "series_title": "夜汽車",
     "series_name": "夜汽車シリーズ"
@@ -157,7 +157,8 @@
         "internal_time_years": 17,
         "state": "現実側帰属が薄れ、保管領域を内側から支える",
         "return_condition": "異常固定の停止＋現実側帰属の再強化"
-      }
+      },
+      "daily_current": "ノアの最近の変化を薄く察しているが明言していない。秋灯祭で自分からガレスを誘い、また出かける余地ができた。"
     },
     "ミア・アステラ": {
       "status": "確定",
@@ -172,7 +173,12 @@
       "residence": [
         "両親宅",
         "店主居住区"
-      ]
+      ],
+      "daily_current": {
+        "yuen": "直接再会済み",
+        "family": "ユアンは既婚、子ども2人。数日ルーナベル滞在後に帰郷",
+        "future": "次回再会やミアのヴァルド訪問は未予定"
+      }
     },
     "エマ": {
       "status": "確定",
@@ -189,7 +195,8 @@
         "マレーナ"
       ],
       "deprecated_note": "初期ログの12歳の弟は旧設定／不採用",
-      "formal_attendant_day4": true
+      "formal_attendant_day4": true,
+      "daily_current": "アレンとは非交際。秋灯祭や包装仕事を通じ、仕事外の話題も自然に混じる程度の超スロー進行。"
     },
     "マレーナ": {
       "status": "確定",
@@ -230,7 +237,11 @@
         "noble_rank": "未確定",
         "reason_for_runaway": "家にいたくなかった、以上は未確定"
       },
-      "formal_attendant_day4": true
+      "formal_attendant_day4": true,
+      "romance_current": "リーナへの恋愛感情を自覚済み・未告白。リーナは未自覚。未交際。",
+      "runaway_reason": "未確定。12歳で家出した事実のみ確定。具体理由・当日の出来事は固定しない。",
+      "residence_current": "表店2階の少年期の旧自室も「帰る場所」として復帰",
+      "leonard_current": "十五年ぶりの対面日決定。最短候補の五日後を選び、ルーナベルの静かな食事処で会う予定。最新時点は再会前。"
     },
     "リゼット・アルシェ": {
       "status": "確定",
@@ -294,8 +305,10 @@
         "魔導技師"
       ],
       "residence": "ヴァルド公国",
-      "family": "既婚・子2人",
-      "reunion": "未再会。ヴァルド公国への照会・連絡を進める段階"
+      "family": "既婚、子ども2人（ミアの姪・甥各1人）",
+      "reunion": "未再会。ヴァルド公国への照会・連絡を進める段階",
+      "current": "ミアと直接再会済み",
+      "varglen": "ヴァルグレン姓を古い有力家名として知るが個人的つながりなし"
     },
     "フィン・アルノー": {
       "status": "確定",
@@ -314,13 +327,6 @@
         "清掃",
         "リネン"
       ]
-    },
-    "イルマ・セーデル": {
-      "status": "確定",
-      "age": "約24",
-      "first_person": "私",
-      "state": "妊娠8か月",
-      "role": "助産師"
     },
     "オスカー・ベルン": {
       "status": "確定",
@@ -483,6 +489,16 @@
     },
     "レオン": {
       "day4_status": "23年前以後の通常生活記録なし／アルカ中枢の帰還候補"
+    },
+    "イルマ・ソーデル": {
+      "status": "確定",
+      "age": "約24歳",
+      "first_person": "私",
+      "state": "妊娠8か月",
+      "role": "助産師",
+      "current": "ソフィ出産後、母子順調。産後休養中",
+      "child": "ソフィ",
+      "name_note": "現行百科事典表記。完成第一部本文の旧表記は今回未修正"
     }
   },
   "items_food": {
@@ -547,36 +563,46 @@
       "yuen": "未再会。照会・連絡を進める直前"
     },
     "daily": {
-      "day": 55,
-      "status": "active",
-      "romance": {
-        "リーナ×ノア": "交際中／作中認識約2週間",
-        "アレン×エマ": "非交際・微かな芽",
-        "セイル×ルチア": "特別だが未交際明言"
+      "start": {
+        "status": "immutable_snapshot",
+        "when": "王国暦724年・秋月8日朝相当",
+        "rina_age": 24,
+        "noah_age": 27,
+        "rina_noah": "仲間／友人。双方恋愛自覚0。未交際",
+        "toki": "未遭遇",
+        "master_residence": "未発見",
+        "yuen": "ミアと未再会",
+        "ilma": "妊娠中"
       },
-      "next_threads": [
-        "限定缶",
-        "アレン×エマ",
-        "ミア",
-        "涯月駅",
-        "ノア実家"
-      ],
-      "yuen": "未再会",
-      "limited_can": "製造完了・納品イベント前"
+      "current": {
+        "when": "日常・恋愛編 七十三日目前後",
+        "season": "冬へ移行中",
+        "rina_noah": "ノア → ／（←）リーナ。ノアは恋愛自覚済み・未告白。リーナは大切な特別枠だが恋愛未自覚。未交際。",
+        "leonard": "十五年ぶりの対面を数日後に予定。五日後候補を選択済み。",
+        "yuen": "直接再会済み、家族編はいったん一区切り",
+        "ilma_sophie": "ソフィ出産済み、母子順調・休養中",
+        "festival": "星迎祭参加正式決定・準備中",
+        "products": [
+          "雪林檎のあつあつパイ販売中",
+          "ほしねこクッキー基本仕様完成",
+          "星迎祭限定缶進行中"
+        ]
+      },
+      "note": "STARTとCURRENTを分離。CURRENTをSTARTへ逆流させない。"
     }
   },
   "contradictions": [
     {
       "id": "B-05",
       "topic": "日常編DAY番号",
-      "status": "未解決",
-      "resolution": "出来事順を正とし、小説化・再編集時に校正"
+      "status": "解決／旧日常編のみ",
+      "resolution": "旧日常編DAY1〜55は時系列不採用。再構成日常編は新ログの進行番号を別レイヤーで扱う。"
     },
     {
       "id": "B-06",
       "topic": "交際期間",
-      "status": "暫定運用",
-      "resolution": "作中認識『約2週間』を優先。DAY校正後に再計算"
+      "status": "解決／旧日常編のみ",
+      "resolution": "旧交際期間設定は再構成で不採用。現在も未交際。"
     },
     {
       "id": "C-02",
@@ -607,6 +633,96 @@
       "topic": "臨時列車621-17の番号補正",
       "status": "要確認・補正禁止",
       "resolution": "列車番号体系が不明。原ログIDは保存するが小説本文では番号を省略。"
+    },
+    {
+      "id": "V31-U01",
+      "topic": "ノアが12歳で家出した具体的理由",
+      "status": "未確定",
+      "resolution": "v3.1で未確定維持。勝手に補完しない。"
+    },
+    {
+      "id": "V31-U02",
+      "topic": "家出当日の出来事",
+      "status": "未確定",
+      "resolution": "v3.1で未確定維持。勝手に補完しない。"
+    },
+    {
+      "id": "V31-U03",
+      "topic": "ヴァルグレン家の正式爵位",
+      "status": "未確定",
+      "resolution": "v3.1で未確定維持。勝手に補完しない。"
+    },
+    {
+      "id": "V31-U04",
+      "topic": "ヴァルグレン家の正式領地名",
+      "status": "未確定",
+      "resolution": "v3.1で未確定維持。勝手に補完しない。"
+    },
+    {
+      "id": "V31-U05",
+      "topic": "ノア父母の詳細な人物像",
+      "status": "未確定",
+      "resolution": "v3.1で未確定維持。勝手に補完しない。"
+    },
+    {
+      "id": "V31-U06",
+      "topic": "ノアと両親の現在の感情関係",
+      "status": "未確定",
+      "resolution": "v3.1で未確定維持。勝手に補完しない。"
+    },
+    {
+      "id": "V31-U07",
+      "topic": "レナードとの実際の再会内容",
+      "status": "未確定",
+      "resolution": "v3.1で未確定維持。勝手に補完しない。"
+    },
+    {
+      "id": "V31-U08",
+      "topic": "再会後の兄弟関係",
+      "status": "未確定",
+      "resolution": "v3.1で未確定維持。勝手に補完しない。"
+    },
+    {
+      "id": "V31-U09",
+      "topic": "ノアが将来ヴァルドへ戻る／訪れるか",
+      "status": "未確定",
+      "resolution": "v3.1で未確定維持。勝手に補完しない。"
+    },
+    {
+      "id": "V31-U10",
+      "topic": "リーナの未解明魔法反応の正体",
+      "status": "未確定",
+      "resolution": "v3.1で未確定維持。勝手に補完しない。"
+    },
+    {
+      "id": "V31-U11",
+      "topic": "星迎祭へ涯月駅から実際に誰が来るか",
+      "status": "未確定",
+      "resolution": "v3.1で未確定維持。勝手に補完しない。"
+    },
+    {
+      "id": "V31-U12",
+      "topic": "星札に各人物が何を書くか",
+      "status": "未確定",
+      "resolution": "v3.1で未確定維持。勝手に補完しない。"
+    },
+    {
+      "id": "V31-U13",
+      "topic": "ノアの告白時期",
+      "status": "未確定",
+      "resolution": "v3.1で未確定維持。勝手に補完しない。"
+    },
+    {
+      "id": "V31-U14",
+      "topic": "リーナの恋愛自覚時期",
+      "status": "未確定",
+      "resolution": "v3.1で未確定維持。勝手に補完しない。"
+    },
+    {
+      "id": "V31-U15",
+      "topic": "リーナ×ノアの交際開始時期",
+      "status": "未確定",
+      "resolution": "v3.1で未確定維持。勝手に補完しない。"
     }
   ],
   "deprecated": [
@@ -851,7 +967,7 @@
     }
   },
   "geography": {
-    "kingdom_name": "未定（資料上《王国》）",
+    "kingdom_name": "セレディア王国",
     "lunabel": {
       "position": "王国最西端",
       "west": "海",
@@ -862,10 +978,22 @@
       "name": "未定"
     },
     "vald_principality": {
-      "relation": "王国とは別の独立同盟国",
-      "position": "北方寒冷平原"
+      "relation": "セレディア王国とは別の独立国家",
+      "position": "セレディア王国北西山岳地帯の先／厳密国境線は未確定"
     },
-    "alca_relative_position": "未確定"
+    "alca_relative_position": "未確定／LOCATION UNKNOWNを維持",
+    "ryune": {
+      "status": "確定",
+      "name": "リュネ村",
+      "position": "セレディア王国北西部の高地・山岳部、ヴァルド公国方面",
+      "product": "雪林檎",
+      "exact_coordinates": "未確定"
+    },
+    "moon_citrus_area": {
+      "status": "確定",
+      "position": "セレディア王国内陸の丘陵・農村地帯",
+      "product": "月蜜柑"
+    }
   },
   "night_train_network": {
     "marlena_647": {
@@ -1039,5 +1167,444 @@
       "mia": "ただいま",
       "rina": "おかえりなさい"
     }
+  },
+  "v3_patch": {
+    "version": "3.0",
+    "created": "2026-08-12",
+    "priority": [
+      "historical_v3_0_patch",
+      "overridden_by_v3_1_where_conflicting"
+    ],
+    "daily_rebuild": {
+      "start": "morning_after_completed_epilogue",
+      "calendar_basis": "724 AutumnMonth 8 morning equivalent",
+      "legacy_day_numbers": "deprecated",
+      "part2_hooks_in_daily": false,
+      "opening_events": [
+        "toki_first_meeting",
+        "ordinary_morning",
+        "reopen_prep_and_cake_first_sale",
+        "master_residence_discovery",
+        "noah_chooses_cafe_2f",
+        "gares_arrival",
+        "mia_contacts_yuan"
+      ]
+    },
+    "characters": {
+      "rina": {
+        "age": 24,
+        "pre_story_job": "small_diner_front_and_kitchen_assistant",
+        "parents_alive": true,
+        "romance_with_noah_at_start": "none_companions"
+      },
+      "clara": {
+        "role": "rina_mother_eleanor_daughter",
+        "alive": true,
+        "traits": [
+          "practical",
+          "common_sense",
+          "caring"
+        ]
+      },
+      "elliott": {
+        "role": "rina_father",
+        "alive": true,
+        "job": "teacher",
+        "traits": [
+          "calm",
+          "good_listener"
+        ]
+      },
+      "noah_varglen": {
+        "age": 27,
+        "origin": "Vard Duchy",
+        "job": "Kingdom Knights regular knight",
+        "brother": "Leonard Varglen",
+        "left_home_at": 12
+      },
+      "leonard_varglen": {
+        "age": 34,
+        "older_than_noah": 7,
+        "role": "heir_incoming_house_head"
+      },
+      "gares_heidel": {
+        "age_approx": 58,
+        "species": "human",
+        "role": "Kingdom Knight Commander",
+        "relations": [
+          "Eleanor longtime suitor/friend",
+          "Noah mentor/father-figure"
+        ]
+      },
+      "mia": {
+        "guild_registered": true,
+        "yuan_direct_reunion": false
+      },
+      "emma": {
+        "guild_registered": false,
+        "main_work": [
+          "kitchen",
+          "baking",
+          "pantry"
+        ]
+      },
+      "toki": {
+        "first_meeting": "daily_rebuild_opening",
+        "cry": "みゃあ",
+        "appearance": "white cat; deep-night-sky ear tips and tail; gold eyes"
+      }
+    },
+    "eleanor_time": {
+      "outside": "about 3 months",
+      "forgetting_line": "about 17 years",
+      "legacy_outside_3_days": "deprecated"
+    },
+    "knights": {
+      "name": "王国騎士団",
+      "levels": [
+        "王都総本部",
+        "地方本部",
+        "各地の詰所"
+      ],
+      "noah_rank": "中堅正騎士"
+    },
+    "night_train_operations": {
+      "cafe_hours": "08:00-21:00",
+      "weekly_closed_days": 1,
+      "lodging_rooms": 16,
+      "night_arrivals_continue_after_cafe_close": true
+    },
+    "romance_route": {
+      "final_pair": "Rina x Noah",
+      "start": "companions_no_romantic_awareness",
+      "pace": "very_slow",
+      "drunk_kiss": "attempt_only_no_lip_contact",
+      "first_lip_kiss": "after_rina_conscious_choice"
+    },
+    "products": {
+      "replay_development": [
+        "夜汽車の窓",
+        "気まぐれ旅支度セット",
+        "トキのほしねこクッキー",
+        "今日の旅切符",
+        "通常紙箱",
+        "特別缶"
+      ],
+      "cake": "created Part1 Day4; first commercial serving early rebuilt daily",
+      "kamitsukido": "Allen family shop"
+    },
+    "unresolved": [
+      "Eleanor biological/chronological age mechanism",
+      "Clara occupation",
+      "parents current city",
+      "Varglen title and parents names",
+      "specific accident in Noah runaway trigger",
+      "Gares/Eleanor final relationship",
+      "Allen/Emma final romance"
+    ],
+    "note": "v3.0の履歴パッチ。v3.1と衝突する項目はv3.1を優先。特にノアの家出具体理由は未確定へ戻す。"
+  },
+  "current_daily_state": {
+    "when": "日常・恋愛編 七十三日目前後",
+    "season": "冬へ移行中",
+    "rina_noah": "ノア → ／（←）リーナ。ノアは恋愛自覚済み・未告白。リーナは大切な特別枠だが恋愛未自覚。未交際。",
+    "leonard": "十五年ぶりの対面を数日後に予定。五日後候補を選択済み。",
+    "yuen": "直接再会済み、家族編はいったん一区切り",
+    "ilma_sophie": "ソフィ出産済み、母子順調・休養中",
+    "festival": "星迎祭参加正式決定・準備中",
+    "products": [
+      "雪林檎のあつあつパイ販売中",
+      "ほしねこクッキー基本仕様完成",
+      "星迎祭限定缶進行中"
+    ]
+  },
+  "legacy_daily_day55": {
+    "status": "deprecated_as_current",
+    "note": "旧日常編DAY55。現在時系列・現在状態として使用しない。イベント素材プールのみ。",
+    "data": {
+      "day": 55,
+      "status": "active",
+      "romance": {
+        "リーナ×ノア": "交際中／作中認識約2週間",
+        "アレン×エマ": "非交際・微かな芽",
+        "セイル×ルチア": "特別だが未交際明言"
+      },
+      "next_threads": [
+        "限定缶",
+        "アレン×エマ",
+        "ミア",
+        "涯月駅",
+        "ノア実家"
+      ],
+      "yuen": "未再会",
+      "limited_can": "製造完了・納品イベント前"
+    }
+  },
+  "organizations": {
+    "kingdom_knights": {
+      "name": "王国騎士団",
+      "type": "王国直属の公共騎士組織",
+      "levels": [
+        "王都総本部",
+        "地方本部",
+        "各地の詰所"
+      ],
+      "duties": [
+        "街道・都市治安",
+        "魔物・犯罪対応",
+        "事故・災害救助",
+        "要人護衛",
+        "捜索",
+        "地域非常対応",
+        "行政支援"
+      ],
+      "noah": "ルーナベル地方本部・中堅正騎士"
+    }
+  },
+  "daily_romance_route": {
+    "status": "author_locked_future",
+    "final_pair": "リーナ×ノア",
+    "start": "仲間・友人／両者恋愛自覚0",
+    "pace": "very_slow",
+    "drunk_kiss": "未遂・唇接触なし",
+    "first_lip_kiss": "リーナが意識的に選んだ後",
+    "current": "ノアのみリーナへの恋愛感情を自覚済み・未告白。リーナは特別視するが恋愛未自覚。未交際。",
+    "current_relation": "ノア → ／（←）リーナ",
+    "noah_after_awareness": [
+      "自分から一緒にいる機会を作る",
+      "予定を合わせる",
+      "褒める",
+      "軽い誘いをする",
+      "軽口を増やす"
+    ],
+    "do_not_advance_yet": [
+      "直接的な好意確認",
+      "即告白",
+      "リーナの即恋愛自覚",
+      "交際開始",
+      "唇へのキス"
+    ]
+  },
+  "characters_v3": {
+    "rina": {
+      "age": 24,
+      "pre_story_job": "small_diner_front_and_kitchen_assistant",
+      "parents_alive": true,
+      "romance_with_noah_at_start": "none_companions"
+    },
+    "clara": {
+      "role": "rina_mother_eleanor_daughter",
+      "alive": true,
+      "traits": [
+        "practical",
+        "common_sense",
+        "caring"
+      ]
+    },
+    "elliott": {
+      "role": "rina_father",
+      "alive": true,
+      "job": "teacher",
+      "traits": [
+        "calm",
+        "good_listener"
+      ]
+    },
+    "noah_varglen": {
+      "age": 27,
+      "origin": "Vard Duchy",
+      "job": "Kingdom Knights regular knight",
+      "brother": "Leonard Varglen",
+      "left_home_at": 12,
+      "runaway_reason": "UNKNOWN / specific reason and day-of event are not canon in v3.1",
+      "current_romance": "aware_of_love_for_rina_not_confessed",
+      "current_residence": "old second-floor room at Night Train restored as a return place"
+    },
+    "leonard_varglen": {
+      "age": 34,
+      "older_than_noah": 7,
+      "role": "heir_incoming_house_head",
+      "current": "meeting scheduled in Lunabell; earliest offered date in five days chosen; not yet reunited"
+    },
+    "gares_heidel": {
+      "age_approx": 58,
+      "species": "human",
+      "role": "Kingdom Knight Commander",
+      "relations": [
+        "Eleanor longtime suitor/friend",
+        "Noah mentor/father-figure"
+      ]
+    },
+    "mia": {
+      "guild_registered": true,
+      "yuan_direct_reunion": false,
+      "yuen": "reunited"
+    },
+    "emma": {
+      "guild_registered": false,
+      "main_work": [
+        "kitchen",
+        "baking",
+        "pantry"
+      ]
+    },
+    "toki": {
+      "first_meeting": "daily_rebuild_opening",
+      "cry": "みゃあ",
+      "appearance": "white cat; deep-night-sky ear tips and tail; gold eyes",
+      "current": "met and named; resident companion in daily life"
+    }
+  },
+  "daily_start_state_v3_1": {
+    "status": "immutable_snapshot",
+    "when": "王国暦724年・秋月8日朝相当",
+    "rina_age": 24,
+    "noah_age": 27,
+    "rina_noah": "仲間／友人。双方恋愛自覚0。未交際",
+    "toki": "未遭遇",
+    "master_residence": "未発見",
+    "yuen": "ミアと未再会",
+    "ilma": "妊娠中"
+  },
+  "daily_current_state_v3_1": {
+    "when": "日常・恋愛編 七十三日目前後",
+    "season": "冬へ移行中",
+    "rina_noah": "ノア → ／（←）リーナ。ノアは恋愛自覚済み・未告白。リーナは大切な特別枠だが恋愛未自覚。未交際。",
+    "leonard": "十五年ぶりの対面を数日後に予定。五日後候補を選択済み。",
+    "yuen": "直接再会済み、家族編はいったん一区切り",
+    "ilma_sophie": "ソフィ出産済み、母子順調・休養中",
+    "festival": "星迎祭参加正式決定・準備中",
+    "products": [
+      "雪林檎のあつあつパイ販売中",
+      "ほしねこクッキー基本仕様完成",
+      "星迎祭限定缶進行中"
+    ]
+  },
+  "festivals_v3_1": {
+    "秋灯祭": {
+      "status": "進行済み",
+      "days": 2,
+      "night_train_official_participation": false,
+      "key": "リーナ/ノア灯舟、エマ/アレン、エレノア/ガレス"
+    },
+    "星迎祭": {
+      "status": "参加正式決定・準備中",
+      "days": 2,
+      "night_train": "既存店舗として参加",
+      "customs": [
+        "祭灯",
+        "店頭札",
+        "二日目の星灯",
+        "星札"
+      ],
+      "gai_getsu_invite": "済み・参加者未確定"
+    }
+  },
+  "foods_v3_1": {
+    "月蜜柑": {
+      "origin": "セレディア王国内陸丘陵・農村",
+      "season": "秋〜初冬",
+      "traits": [
+        "収穫期前に淡く発光",
+        "爽やかな酸味",
+        "皮の苦味少なめ"
+      ]
+    },
+    "雪林檎": {
+      "origin": "リュネ村周辺高地",
+      "magic": false,
+      "size": "小ぶり",
+      "skin": "深赤",
+      "flesh": "淡い乳白色",
+      "harvest": "晩秋",
+      "market": "初冬",
+      "cooking": "加熱で香り・甘みが立ち形が残りやすい"
+    },
+    "雪林檎のあつあつパイ": {
+      "status": "冬季定番・販売中",
+      "cream": "希望制"
+    },
+    "雪林檎と豚肉の冬煮込み": {
+      "status": "星迎祭用採用方向",
+      "honey": "不使用"
+    },
+    "雪林檎タルト": {
+      "status": "現時点見送り"
+    }
+  },
+  "products_v3_1": {
+    "ほしねこクッキー": {
+      "status": "基本仕様完成",
+      "origin": "フィン発案・命名",
+      "package": "通常は箱、イベントのみ缶可"
+    },
+    "星迎祭限定ほしねこ缶": {
+      "status": "進行中",
+      "tin": "濃紺の小型長方形既製缶",
+      "count": 4,
+      "wrap": "紙帯",
+      "insert": "紙月堂",
+      "art": "リーナ試作中：白いトキ＋星＋夜汽車/列車",
+      "lot": "小ロット検討"
+    },
+    "バターケーキ用テイクアウト箱": {
+      "status": "第二試作構造・寸法採用",
+      "maker": "紙月堂／アレン",
+      "paper": "生成り寄り・汚れに強い",
+      "print": "一色・夜汽車店名＋小列車",
+      "scope": "季節ケーキ汎用"
+    }
+  },
+  "romance_v3_1": {
+    "start": {
+      "rina": "unaware",
+      "noah": "unaware",
+      "status": "friends_not_dating"
+    },
+    "current": {
+      "rina": "special_but_romantically_unaware",
+      "noah": "aware_in_love_not_confessed",
+      "status": "not_dating",
+      "diagram": "ノア → ／（←）リーナ"
+    },
+    "noah_style": "好き→一応隠す→自分から近づく→だんだん隠れていない",
+    "gares_contrast": "好き→隠さない→相手が決めるまで待つ",
+    "future_not_happened": [
+      "リーナの「他の子にも言ってるの？」",
+      "ガレスによる恋愛看破",
+      "告白",
+      "リーナ恋愛自覚",
+      "交際開始"
+    ]
+  },
+  "unresolved_v3_1": [
+    "ノアが12歳で家出した具体的理由",
+    "家出当日の出来事",
+    "ヴァルグレン家の正式爵位",
+    "ヴァルグレン家の正式領地名",
+    "ノア父母の詳細な人物像",
+    "ノアと両親の現在の感情関係",
+    "レナードとの実際の再会内容",
+    "再会後の兄弟関係",
+    "ノアが将来ヴァルドへ戻る／訪れるか",
+    "リーナの未解明魔法反応の正体",
+    "星迎祭へ涯月駅から実際に誰が来るか",
+    "星札に各人物が何を書くか",
+    "ノアの告白時期",
+    "リーナの恋愛自覚時期",
+    "リーナ×ノアの交際開始時期"
+  ],
+  "daily_rebuild_start_state": {
+    "series": "日常・恋愛編（再構成版）",
+    "when": "完成第一部エピローグ翌朝",
+    "calendar": "王国暦724年 秋月8日朝相当",
+    "location": "《夜汽車》表店／宿泊棟",
+    "status": "新規開始可能",
+    "legacy_day_numbers": "使用禁止",
+    "rina_noah": "仲間・友人／恋愛自覚0",
+    "toki": "未遭遇",
+    "master_residence": "未発見",
+    "cafe": "本格通常営業再開前",
+    "part2_hooks": "日常編では進めない"
   }
 }

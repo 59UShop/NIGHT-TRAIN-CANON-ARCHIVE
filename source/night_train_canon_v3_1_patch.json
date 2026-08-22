@@ -1,0 +1,153 @@
+{
+  "version": "3.1",
+  "generated": "2026-08-22",
+  "priority": "latest_user_explicit",
+  "daily_start": {
+    "status": "immutable_snapshot",
+    "when": "王国暦724年・秋月8日朝相当",
+    "rina_age": 24,
+    "noah_age": 27,
+    "rina_noah": "仲間／友人。双方恋愛自覚0。未交際",
+    "toki": "未遭遇",
+    "master_residence": "未発見",
+    "yuen": "ミアと未再会",
+    "ilma": "妊娠中"
+  },
+  "daily_current": {
+    "when": "日常・恋愛編 七十三日目前後",
+    "season": "冬へ移行中",
+    "rina_noah": "ノア → ／（←）リーナ。ノアは恋愛自覚済み・未告白。リーナは大切な特別枠だが恋愛未自覚。未交際。",
+    "leonard": "十五年ぶりの対面を数日後に予定。五日後候補を選択済み。",
+    "yuen": "直接再会済み、家族編はいったん一区切り",
+    "ilma_sophie": "ソフィ出産済み、母子順調・休養中",
+    "festival": "星迎祭参加正式決定・準備中",
+    "products": [
+      "雪林檎のあつあつパイ販売中",
+      "ほしねこクッキー基本仕様完成",
+      "星迎祭限定缶進行中"
+    ]
+  },
+  "geography": {
+    "kingdom_name": "セレディア王国",
+    "lunabel": {
+      "position": "王国最西端",
+      "west": "海",
+      "east": "王国内陸"
+    },
+    "royal_capital": {
+      "position": "王国東部",
+      "name": "未定"
+    },
+    "vald_principality": {
+      "relation": "セレディア王国とは別の独立国家",
+      "position": "セレディア王国北西山岳地帯の先／厳密国境線は未確定"
+    },
+    "alca_relative_position": "未確定／LOCATION UNKNOWNを維持",
+    "ryune": {
+      "status": "確定",
+      "name": "リュネ村",
+      "position": "セレディア王国北西部の高地・山岳部、ヴァルド公国方面",
+      "product": "雪林檎",
+      "exact_coordinates": "未確定"
+    },
+    "moon_citrus_area": {
+      "status": "確定",
+      "position": "セレディア王国内陸の丘陵・農村地帯",
+      "product": "月蜜柑"
+    }
+  },
+  "foods": {
+    "月蜜柑": {
+      "origin": "セレディア王国内陸丘陵・農村",
+      "season": "秋〜初冬",
+      "traits": [
+        "収穫期前に淡く発光",
+        "爽やかな酸味",
+        "皮の苦味少なめ"
+      ]
+    },
+    "雪林檎": {
+      "origin": "リュネ村周辺高地",
+      "magic": false,
+      "size": "小ぶり",
+      "skin": "深赤",
+      "flesh": "淡い乳白色",
+      "harvest": "晩秋",
+      "market": "初冬",
+      "cooking": "加熱で香り・甘みが立ち形が残りやすい"
+    },
+    "雪林檎のあつあつパイ": {
+      "status": "冬季定番・販売中",
+      "cream": "希望制"
+    },
+    "雪林檎と豚肉の冬煮込み": {
+      "status": "星迎祭用採用方向",
+      "honey": "不使用"
+    },
+    "雪林檎タルト": {
+      "status": "現時点見送り"
+    }
+  },
+  "products": {
+    "ほしねこクッキー": {
+      "status": "基本仕様完成",
+      "origin": "フィン発案・命名",
+      "package": "通常は箱、イベントのみ缶可"
+    },
+    "星迎祭限定ほしねこ缶": {
+      "status": "進行中",
+      "tin": "濃紺の小型長方形既製缶",
+      "count": 4,
+      "wrap": "紙帯",
+      "insert": "紙月堂",
+      "art": "リーナ試作中：白いトキ＋星＋夜汽車/列車",
+      "lot": "小ロット検討"
+    },
+    "バターケーキ用テイクアウト箱": {
+      "status": "第二試作構造・寸法採用",
+      "maker": "紙月堂／アレン",
+      "paper": "生成り寄り・汚れに強い",
+      "print": "一色・夜汽車店名＋小列車",
+      "scope": "季節ケーキ汎用"
+    }
+  },
+  "romance": {
+    "start": {
+      "rina": "unaware",
+      "noah": "unaware",
+      "status": "friends_not_dating"
+    },
+    "current": {
+      "rina": "special_but_romantically_unaware",
+      "noah": "aware_in_love_not_confessed",
+      "status": "not_dating",
+      "diagram": "ノア → ／（←）リーナ"
+    },
+    "noah_style": "好き→一応隠す→自分から近づく→だんだん隠れていない",
+    "gares_contrast": "好き→隠さない→相手が決めるまで待つ",
+    "future_not_happened": [
+      "リーナの「他の子にも言ってるの？」",
+      "ガレスによる恋愛看破",
+      "告白",
+      "リーナ恋愛自覚",
+      "交際開始"
+    ]
+  },
+  "unresolved": [
+    "ノアが12歳で家出した具体的理由",
+    "家出当日の出来事",
+    "ヴァルグレン家の正式爵位",
+    "ヴァルグレン家の正式領地名",
+    "ノア父母の詳細な人物像",
+    "ノアと両親の現在の感情関係",
+    "レナードとの実際の再会内容",
+    "再会後の兄弟関係",
+    "ノアが将来ヴァルドへ戻る／訪れるか",
+    "リーナの未解明魔法反応の正体",
+    "星迎祭へ涯月駅から実際に誰が来るか",
+    "星札に各人物が何を書くか",
+    "ノアの告白時期",
+    "リーナの恋愛自覚時期",
+    "リーナ×ノアの交際開始時期"
+  ]
+}
